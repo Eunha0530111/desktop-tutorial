@@ -8,7 +8,7 @@ def clean_venue_name(name):
     if not name or name == "未取得" or name == "未標註地點":
         return "未知/未取得"
     
-    # 先轉為大寫並去掉前後空白，處理 Westar vs WESTAR 的問題
+    # 先轉為大寫並去掉前後空白
     n = name.upper().strip()
     
     # --- 歸類邏輯開始 ---
